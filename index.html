@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast | Hitha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather<span>ly.</span></h1>
+      <p>Know your world, one forecast at a time.</p>
+    </header>
+
+    <section class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city name...">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <p id="message"></p>
+
+    <section class="weather-card" id="weatherCard" hidden>
+      <div class="current-weather">
+        <div>
+          <p id="cityName"></p>
+          <h2 id="temperature"></h2>
+          <p id="description"></p>
+          <p id="feelsLike"></p>
+        </div>
+        <img id="weatherIcon" alt="Weather icon">
+      </div>
+
+      <div class="details">
+        <div><span>Humidity</span><strong id="humidity"></strong></div>
+        <div><span>Wind speed</span><strong id="wind"></strong></div>
+        <div><span>Pressure</span><strong id="pressure"></strong></div>
+      </div>
+    </section>
+
+    <section id="forecastSection" hidden>
+      <h2>5-Day Forecast</h2>
+      <div class="forecast-grid" id="forecastGrid"></div>
+    </section>
+
+    <footer>
+      <p>Designed & built by Hitha B M · Weather data by OpenWeatherMap</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
